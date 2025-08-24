@@ -8,33 +8,27 @@ import { cn } from "@/lib/utils";
 
 export function Navigation() {
   return (
-      <header
-        className="fixed inset-x-0 z-20 mb-4  top-0"
-      >
-        <div className="flex items-center gap-2  border-b border-foreground/25 bg-background/95 py-2 h-16 sm:h-24 shadow-md supports-[backdrop-filter]:bg-background/60 supports-[backdrop-filter]:bg-clip-padding supports-[backdrop-filter]:backdrop-blur justify-between rounded-none px-3">
-          <div className="container mx-auto flex max-w-7xl">
-            <div className="flex items-center justify-start">
-              <div className="h-8 w-auto flex items-center justify-center">
-                <Link
-                  href="/"
-                  aria-label="Go to Home"
-                  className="h-full w-full"
-                >
-                  <Logo />
-                </Link>
-              </div>
-            </div>
-            <div className=" ml-auto">
-              <nav className="ml-auto hidden sm:flex  items-center space-x-6  font-semibold h-full sm:w-full">
-                <Navbar />
-              </nav>
-              <nav className="sm:hidden">
-                <MobileNav />
-              </nav>
+    <header className="fixed inset-x-0 z-20 mb-4  top-0">
+      <div className="flex items-center gap-2  border-b border-foreground/25 bg-background/95 py-2 h-16 sm:h-24 shadow-md supports-[backdrop-filter]:bg-background/60 supports-[backdrop-filter]:bg-clip-padding supports-[backdrop-filter]:backdrop-blur justify-between rounded-none px-3">
+        <div className="container mx-auto flex max-w-7xl">
+          <div className="flex items-center justify-start">
+            <div className="h-8 w-auto flex items-center justify-center">
+              <Link href="/" aria-label="Go to Home" className="h-full w-full">
+                <Logo />
+              </Link>
             </div>
           </div>
+          <div className=" ml-auto">
+            <nav className="ml-auto hidden sm:flex  items-center space-x-6  font-semibold h-full sm:w-full">
+              <Navbar />
+            </nav>
+            <nav className="sm:hidden">
+              <MobileNav />
+            </nav>
+          </div>
         </div>
-      </header>
+      </div>
+    </header>
   );
 }
 
